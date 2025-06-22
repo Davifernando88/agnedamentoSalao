@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Agende seu horário</h1>
+
+    <form th:action="@{/agendar}" th:object="${agendamento}" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" th:field="*{nome}" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" th:field="*{telefone}" placeholder="(51) 99999-0000" required>
+
+        <label for="servico">Serviço:</label>
+        <select th:field="*{servico}" required>
+            <option value="">Selecione</option>
+            <option value="Corte">Corte</option>
+            <option value="Manicure">Manicure</option>
+        </select>
+
+        <label for="data">Data:</label>
+        <input type="date" th:field="*{data}" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" th:field="*{hora}" required>
+
+        <button type="submit">Agendar</button>
+    </form>
+</body>
+</html>
+
