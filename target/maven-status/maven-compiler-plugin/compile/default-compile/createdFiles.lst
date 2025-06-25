@@ -1,0 +1,5 @@
+com\salao\salao\controller\PaginasController.class
+com\salao\salao\model\Agendamento.class
+com\salao\salao\controller\AgendamentoController.class
+com\salao\salao\repository\AgendamentoRepository.class
+com\salao\salao\SalaoApplication.class

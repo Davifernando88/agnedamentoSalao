@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <title>Salão de Beleza</title>
 </head>
+
 <body>
- 
+
     <h1>Bem-vindo ao Salão de Beleza</h1>
-    <a href="/agendar">Agendamento</a><br/> <br/>
+    <a href="/agendar">Agendamento</a><br /> <br />
     <a href="/listar">Listar</a>
-     <div th:if="${mensagem}" class="alert alert-success">
-    <p th:text="${mensagem}"></p>
-</div>
+    <div th:if="${mensagem}" class="alert alert-success">
+        <p th:text="${mensagem}"></p>
+    </div>
 </body>
+
 </html>
